@@ -30,7 +30,7 @@ interface CardProps {
 
 export function Card({ data, onPress }: CardProps) {
   const swipeableRef = useRef<Swipeable>(null);
-
+  
   const { removeRepository } = useRepositories();
 
   function handleDeleteAlert() {
